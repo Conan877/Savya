@@ -1,68 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Savaya Wallets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Savya</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#about">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 id="logo_text">SAVYA</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <div class="container" id="home">
-    <div class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">Savaya</h1>
-        <p>Your go-to destination for stylish and functional wallets.</p>
-      </div>
+    <section id="hero" class="hero">
+        <h1>Welcome to Savya Wallets</h1>
+        <p class="slogan">Luxurious Wallets Made for You</p>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <!-- Product 1 -->
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="wallet1.jpg" alt="Wallet 1">
+                </div>
+                <h2>Wallet 1</h2>
+                <p class="product-description">This is a long description of Wallet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="product-price">$29.99</p>
+                <button class="view-button" onclick="showProduct(1)">View</button>
+            </div>
+        </div>    
+            <!-- Add more product items here -->
+            <!-- Product 1 -->
+        <div class="container">    
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="wallet1.jpg" alt="Wallet 1">
+                </div>
+                <h2>Wallet 1</h2>
+                <p class="product-description">This is a long description of Wallet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="product-price">$29.99</p>
+                <button class="view-button" onclick="showProduct(1)">View</button>
+            </div>
+        </div>
+            <!-- Add more product items here -->
+            <!-- Product 1 -->
+        <div class="container"> 
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="wallet1.jpg" alt="Wallet 1">
+                </div>
+                <h2>Wallet 1</h2>
+                <p class="product-description">This is a long description of Wallet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="product-price">$29.99</p>
+                <button class="view-button" onclick="showProduct(1)">View</button>
+            </div>
+        </div>    
+            <!-- Add more product items here -->     
+            <!-- Product 1 -->
+        <div class="container">     
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="wallet1.jpg" alt="Wallet 1">
+                </div>
+                <h2>Wallet 1</h2>
+                <p class="product-description">This is a long description of Wallet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="product-price">$29.99</p>
+                <button class="view-button" onclick="showProduct(1)">View</button>
+            </div>
+            <!-- Add more product items here -->                               
+        </div>
+
+    </section>
+
+    <!-- Product Detail Section -->
+    <div id="product-detail" class="product-detail">
+        <div class="container">
+            <h2 id="product-name">Wallet 1</h2>
+            <p class="description" id="product-description">
+                This is a long description of Wallet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <div class="image-gallery">
+                <button id="prev-image" class="arrow-button prev-button">&#8249;</button>
+                <img src="wallet1.jpg" alt="Wallet 1" id="product-image">
+                <button id="next-image" class="arrow-button next-button">&#8250;</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="container" id="products">
-    <h2 class="gray-heading">Products</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="Wallet1.jpg" alt="Wallet 1">
-        <div class="product-price">$50</div>
-      </div>
-      <div class="product">
-        <img src="Wallet2.jpg" alt="Wallet 2">
-        <div class="product-price">$60</div>
-      </div>
-      <div class="product">
-        <img src="Wallet3.jpg" alt="Wallet 3">
-        <div class="product-price">$45</div>
-      </div>
-      <div class="product">
-        <img src="Wallet4.jpg" alt="Wallet 4">
-        <div class="product-price">$55</div>
-      </div>
-    </div>
-  </div>
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Contact information and form go here.</p>
+        </div>
+    </section>
 
-  <div class="container" id="contact">
-    <h2 class="gray-heading">Contact Us</h2>
-    <p>Connect with us on <a href="https://www.facebook.com/yourpage"><i class="fab fa-facebook"></i> Facebook</a>.</p>
-    <p>Reach us on WhatsApp: <a href="https://wa.me/yourphonenumber"><i class="fab fa-whatsapp"></i> Your Phone Number</a></p>
-  </div>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>About Us content goes here.</p>
+        </div>
+    </section>
 
-  <div class="container" id="about">
-    <h2 class="gray-heading">About Us</h2>
-    <p>Savaya Wallets, founded in 2016, is a brand dedicated to providing high-quality and stylish wallets that meet your needs. We are also committed to delivering a seamless shopping experience to our customers along with a transparent delivery policy.</p>
-  </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Savya Wallets. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <footer id="footer">
-    <p>&copy; 2023 Savaya Wallets. All rights reserved.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
